@@ -13,8 +13,8 @@ export class RatioLayout extends BaseResizeableTilingLayout {
 
     updateMainPortionLength(length: number) {
         const pushInPortion = (portion) => {
-            if (portion.children.length === 2) {
-                pushInPortion(portion.children[1]);
+            if (portion.children.length === 3) {
+                pushInPortion(portion.children[2]);
             } else {
                 portion.push();
             }
